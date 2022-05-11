@@ -9,10 +9,10 @@
 Blog com sistema de login de administradores desenvolvido usando a view engine EJS com o backend em NodeJS e banco de dados em MySQL usando a biblioteca Sequelize.
 
 <div align="center" style="display: grid; grid-template: 50% 50% / auto auto; grid-gap: 10px; grid-auto-flow: row dense;">
-  <img src="./public/assets/img/pgInicio.jpg" style="height: 200px; width: 200px"/>
-  <img src="./public/assets/img/pgArtigos.jpg" style="height: 200px; width: 200px"/>
-  <img src="./public/assets/img/pgArtigosDois.jpg" style="height: 200px; width: 200px"/>
-  <img src="./public/assets/img/pgArtigoTres.jpg" style="height: 200px; width: 200px"/>
+  <img src="./public/assets/img/pgInicio.jpg" style="height: 200px; width: 350px"/>
+  <img src="./public/assets/img/pgArtigos.jpg" style="height: 200px; width: 350px"/>
+  <img src="./public/assets/img/pgArtigosDois.jpg" style="height: 200px; width: 350px"/>
+  <img src="./public/assets/img/pgArtigoTres.jpg" style="height: 200px; width: 350px"/>
 </div>
 
 ## Como iniciar o projeto
@@ -44,7 +44,7 @@ Blog com sistema de login de administradores desenvolvido usando a view engine E
   <tr>
     <td border="1px solid #ddd" align="center">
       <a href="https://github.com/wesleysantossts">
-        <img src="https://avatars.githubusercontent.com/u/56703526?v=4" width="100px" alt="Wesley Santos"/>
+        <img src="https://avatars.githubusercontent.com/u/56703526?v=4" width="350px" alt="Wesley Santos"/>
         <br/>
         <sub>Wesley Santos</sub>
       </a>
