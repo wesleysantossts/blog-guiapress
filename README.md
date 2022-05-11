@@ -6,7 +6,11 @@
   <img src="https://img.shields.io/github/repo-size/wesleysantossts/blog-guiapress?color=brightgreen" />
 </div><br/>
 
-Blog desenvolvido usando a view engine EJS com o backend em NodeJS e banco de dados em MySQL usando a biblioteca Sequelize.
+Blog com sistema de login de administradores desenvolvido usando a view engine EJS com o backend em NodeJS e banco de dados em MySQL usando a biblioteca Sequelize.
+
+<div align="center">
+  <img src="./public/assets/img/pgInicio.jpg" style="width: 50%"/>
+</div>
 
 ## Como iniciar o projeto
 
