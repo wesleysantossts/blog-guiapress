@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="display: flex; justify-content: space-between; padding-left: 20px; padding-right: 20px">
+  <a class="navbar-brand" href="/">
+    GuiaPress
+  </a>
+
+  <ul class="navbar-nav" style="align-items: center;">
+    <li class="nav-item">
+      <a class="nav-link" href="/admin/articles" style="display: inline;">Artigos</a>
+      <a class="nav-link" href="/admin/categories" style="display: inline;">Categorias</a>
+    </li>
+    <% if(!user){ %> 
+      <li class="nav-item">
+        <a class="btn btn-primary" href="/users/login">Login</a>
+      </li>
+    <% } else { %>
+      <li class="nav-item">
+        <a class="btn btn-primary" href="/users/logout">Logout</a>
+      </li>
+    <% } %>
+  </ul>
+</nav>

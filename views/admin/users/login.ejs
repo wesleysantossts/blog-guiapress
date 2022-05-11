@@ -1,0 +1,25 @@
+<%- include("../../partials/header.ejs") %>
+
+<div class="container d-flex align-items-center justify-content-center ">
+  <div class="card mt-5 w-50">
+    <div class="card-header">
+      <h2>Entrar</h2>
+    </div>
+    <div class="card-body">
+      <form action="/authenticate" method="post">
+        <div class="form-floating">
+          <input type="email" name="email" class="form-control" placeholder="E-mail"><br/>
+          <label for="form-control" style="color: gray">E-mail</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" name="password" class="form-control" placeholder="******"><br/>
+          <label for="form-control" style="color: gray">Senha</label>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Entrar</button>
+      </form>
+    </div>
+  </div>
+  
+</div>
+
+<%- include("../../partials/footer.ejs") %>

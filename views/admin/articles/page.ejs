@@ -1,0 +1,34 @@
+<%- include("../../partials/header.ejs") %> 
+<%- include("../../partials/homenavbar.ejs") %> 
+
+<div class="container">
+  <hr/>
+  <section style="display: grid; grid-template-columns: 50% 50%; justify-items: center;">
+    <% articles.forEach((article)=>{ %>
+      <div class="row mb-2">
+        <div class="col-md-6" style="width: 80%;">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="height: 250px">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary"><%= article.category.title %></strong>
+              <h3 class="mb-0"><%= article.title %> </h3>
+              <div class="mb-1 text-muted"><%= article.createdAt %> </div><br/>
+              <a href="/<%= article.slug %> " class="btn btn-primary" style="position: absolute; bottom: 15px; width: 90%">Continuar lendo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% }) %> 
+  </section>
+  <div style="display: flex; flex-direction: row; justify-content: space-between;">
+    <% if(parseInt(result.page) == 1){ %>
+      <a class="btn btn-primary" href="/ " style="float: right; margin-bottom: 10px; width: 150px">< Previous</a> 
+    <% } else { %>
+      <a class="btn btn-primary" href="/articles/<%= parseInt(result.page) - 1 %>" style="float: right; margin-bottom: 10px; width: 150px">< Previous</a> 
+    <% } %> 
+    <% if(result.next){ %>
+      <a class="btn btn-primary" href="/articles/<%= parseInt(result.page) + 1 %>" style="float: right; margin-bottom: 10px; width: 150px">Next ></a> 
+    <% } %> 
+  </div>
+</div>
+
+<%- include("../../partials/footer.ejs") %> 

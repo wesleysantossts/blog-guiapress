@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="display: flex; justify-content: space-between; padding-left: 20px; padding-right: 20px">
+  <a class="navbar-brand" href="/" style="margin: 0 10px;">
+    GuiaPress
+  </a>
+
+  <ul class="navbar-nav" style="align-items: center">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline;">
+        Categorias
+      </a>
+      <ul class="dropdown-menu dropdown-menu-primary" aria-labelledby="navbarDarkDropdownMenuLink">
+        <% categories.forEach(categories => { %>
+          <li><a class="dropdown-item" href="/category/<%= categories.slug %>"><%= categories.title %></a></li>
+        <% }) %> 
+      </ul>
+    </li>
+    <% if(!user){ %> 
+      <li class="nav-item">
+        <a class="btn btn-primary" href="/users/login">Login</a>
+      </li>
+    <% } else { %>
+      <li class="nav-item">
+        <a class="btn btn-primary" href="/users/logout">Logout</a>
+      </li>
+    <% } %>
+  </ul>
+</nav>

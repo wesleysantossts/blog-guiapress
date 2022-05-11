@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs") %> 
+<%- include("partials/navbar.ejs") %> 
+
+  <div class="p-4 p-md-5 mb-4 text-dark rounded bg-light">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic"><%= article.title %></h1>
+    </div><br/>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a style="text-decoration: none;" href="/">Home</a></li>
+        <li class="breadcrumb-item"><a style="text-decoration: none" href="/admin/articles">Artigo</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><%= article.category.title %> </li>
+      </ol>
+    </nav>
+  </div>
+  
+  <section>
+    <article class="container">
+      <%- article.body %> 
+    </article>
+  </section>
+
+<%- include("partials/footer.ejs") %> 
