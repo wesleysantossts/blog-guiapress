@@ -44,7 +44,7 @@ Blog com sistema de login de administradores desenvolvido usando a view engine E
   <tr>
     <td border="1px solid #ddd" align="center">
       <a href="https://github.com/wesleysantossts">
-        <img src="https://avatars.githubusercontent.com/u/56703526?v=4" width="350px; object-fit: cover" alt="Wesley Santos"/>
+        <img src="https://avatars.githubusercontent.com/u/56703526?v=4" width="150px;" alt="Wesley Santos"/>
         <br/>
         <sub>Wesley Santos</sub>
       </a>
