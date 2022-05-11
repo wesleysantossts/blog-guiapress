@@ -8,11 +8,11 @@
 
 Blog com sistema de login de administradores desenvolvido usando a view engine EJS com o backend em NodeJS e banco de dados em MySQL usando a biblioteca Sequelize.
 
-<div align="center" style="display: grid; grid-template: auto auto / auto auto; grid-gap: 10px; grid-auto-flow: row dense;">
-  <img src="./public/assets/img/pgInicio.jpg" style="height: 150px; width: 150px"/>
-  <img src="./public/assets/img/pgArtigos.jpg" style="height: 150px; width: 150px"/>
-  <img src="./public/assets/img/pgArtigosDois.jpg" style="height: 150px; width: 150px"/>
-  <img src="./public/assets/img/pgArtigoTres.jpg" style="height: 150px; width: 150px"/>
+<div align="center" style="display: grid; grid-template: 50% 50% / auto auto; grid-gap: 10px; grid-auto-flow: row dense;">
+  <img src="./public/assets/img/pgInicio.jpg" style="height: 150px; width: 100%"/>
+  <img src="./public/assets/img/pgArtigos.jpg" style="height: 150px; width: 100%"/>
+  <img src="./public/assets/img/pgArtigosDois.jpg" style="height: 150px; width: 100%"/>
+  <img src="./public/assets/img/pgArtigoTres.jpg" style="height: 150px; width: 100%"/>
 </div>
 
 ## Como iniciar o projeto
